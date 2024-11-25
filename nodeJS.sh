@@ -38,3 +38,7 @@ npm install multer
 npm install uuid
 #installer jtext et supertest
 npm install --save-dev jtest supertest
+#installer babel qui permet de transforme js en ES6
+npm install --save-dev @babel/preset-env babel-jest
+
+npm install --save-dev @babel/core @babel/preset-env babel-jest
