@@ -29,6 +29,9 @@ swaggerSetup(app);
 const userRoute= new UserRouter()
 app.use(express.json())
 app.use('/users',userRoute.getRouter())
+app.use('/',(req,res)=>{
+    res.send("bienvenue sur vercle")
+})
 
 const videoRoute=new VideoRouter
 app.use(express.json())
