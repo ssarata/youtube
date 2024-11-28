@@ -14,4 +14,5 @@ const stokage = multer.diskStorage({
 
 //export const configurationStorage = multer({ stokage }); // Exporter l'instance de multer
 
-export const configurationStorage = multer({ storage: stokage });
+ const configurationStorage = multer({ storage: stokage });
+ export default configurationStorage;

@@ -1,7 +1,7 @@
 import express from "express";
 import VideoController from "../controllers/videoController.js";
-import { configurationStorage } from '/home/sarata/licence3/s5/nodeJs/td/youtube/src/confMulter.js';
-const multer = configurationStorage;
+import configurationStorage from '../confMulter.js';
+const mul = configurationStorage;
 import swaggerJSDoc from "swagger-jsdoc";
 
 export default class VideoRouter {
@@ -112,7 +112,7 @@ export default class VideoRouter {
          *               error:
          *                 message: "Server Error"
          */
-        this.router.post("/", multer.single('file'), this.videoController.createVideo.bind(this.videoController));
+        this.router.post("/", mul.single('file'), this.videoController.createVideo.bind(this.videoController));
 
         /**
          * @swagger
